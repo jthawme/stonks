@@ -1,0 +1,69 @@
+.players {
+  display: flex;
+  flex-direction: column;
+
+  background-color: black;
+
+  height: 100%;
+
+  .player {
+    border: 1px solid white;
+
+    background-color: var(--player-color);
+    color: white;
+
+    select {
+      max-width: 100px;
+    }
+
+    h5 {
+      margin: 0;
+
+      font-size: 14px;
+    }
+
+    .controls {
+      animation: blink-animation 1s steps(5, start) infinite;
+
+      font-size: 20px;
+      color: white;
+
+      font-weight: bold;
+
+      margin-top: 10px;
+
+      mix-blend-mode: difference;
+    }
+
+    .player-scores {
+      list-style: none;
+
+      padding: 0;
+      margin: 10px 0 0;
+
+      em {
+        display: inline-block;
+
+        font-size: 18px;
+
+        mix-blend-mode: difference;
+      }
+    }
+
+    .control,
+    em {
+      display: inline-block;
+      font-family: monospace;
+      background-color: white;
+      color: black;
+
+      padding: 0 5px;
+    }
+  }
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}

@@ -1,0 +1,19 @@
+.messages {
+  flex-basis: 100px;
+  height: 100px;
+  max-height: 100px;
+  flex-grow: 0;
+  flex-shrink: 0;
+
+  background-color: rgba(0, 0, 0, 0.5);
+
+  overflow: auto;
+
+  span {
+    display: block;
+    color: white;
+    font-family: monospace;
+    font-size: 11px;
+    border-bottom: 1px solid white;
+  }
+}

@@ -1,0 +1,34 @@
+.wrapper {
+  display: grid;
+
+  grid-template-areas:
+    "info aside"
+    "main aside";
+  grid-template-columns: auto 200px;
+
+  height: 100%;
+
+  background-color: var(--color-bg);
+
+  main {
+    position: relative;
+
+    grid-area: main;
+
+    overflow: hidden;
+
+    line-height: 0;
+  }
+
+  .info {
+    grid-area: info;
+  }
+
+  aside {
+    display: flex;
+
+    flex-direction: column;
+
+    grid-area: aside;
+  }
+}

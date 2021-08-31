@@ -1,0 +1,25 @@
+@import "normalize.css";
+
+:root {
+  --color-bg: #03166e;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+
+  -webkit-font-smoothing: antialiased;
+}
+
+canvas {
+  outline: 1px solid red;
+}
+
+#app {
+  height: 100vh;
+}

@@ -1,0 +1,32 @@
+.actions {
+  button {
+    display: block;
+
+    padding: 0;
+    margin: 0;
+
+    width: 100%;
+
+    border: 1px solid white;
+
+    font-family: monospace;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    background-color: white;
+    color: black;
+
+    text-align: left;
+
+    &:hover {
+      background-color: black;
+      color: white;
+    }
+
+    &[disabled] {
+      background-color: grey;
+      color: lightgray;
+    }
+  }
+}

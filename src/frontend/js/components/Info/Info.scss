@@ -1,0 +1,50 @@
+.info-container {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  .column {
+    background-color: var(--color-bg);
+
+    font-size: 20px;
+    color: white;
+    border: 1px solid white;
+
+    &.increase {
+      background-color: green;
+    }
+
+    &.decrease {
+      background-color: red;
+    }
+  }
+
+  .ticker {
+    overflow: hidden;
+  }
+
+  .ticker-tape {
+    display: block;
+
+    white-space: pre;
+
+    font-family: monospace;
+
+    animation: {
+      name: SLIDE;
+      duration: 1s;
+      iteration-count: infinite;
+      timing-function: linear;
+    }
+  }
+}
+
+@keyframes SLIDE {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-5ch);
+  }
+}

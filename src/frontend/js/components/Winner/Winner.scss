@@ -1,0 +1,25 @@
+.winner {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate3d(-50%, -50%, 0);
+
+  background-color: var(--player-color);
+
+  line-height: normal;
+
+  span {
+    background-color: black;
+    color: white;
+
+    mix-blend-mode: difference;
+
+    animation: blink-animation 1s steps(5, start) infinite;
+
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
